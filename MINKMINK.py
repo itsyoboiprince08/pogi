@@ -559,58 +559,59 @@ while True:
             print("             |                                     │")
             print("             ⬇                                     │")
             print("            END ←----------------------------------↓")
-
+        else:
+            print("INVALID")
+            
+        print(" QUIZ: FUNDAMENTALS OF PROBLEM SOLVING \n")
+        score = 0
+        # Question 1
+        print("Q1: What is algorithm")
+        print("A) a solution")
+        print("B) a step-by-step procedure used to")
+        print("C) this is a game")
+        ans1 = input("Your answer (A/B/C): ").upper()
+        if ans1 == "B":
+            print("Correct!\n")
+            score += 1
+        else:
+            print("AYOS TOLLLLLL\n")
+        # Question 2
+        print("Q2: Pseudocode is?")
+        print("A) color")
+        print("B) simple english-like plan before coding")
+        print("C) place to take a rest")
+        ans2 = input("Your answer (A/B/C): ").upper()
+        if ans2 == "B":
+            print("Correct!\n")
+            score += 1
+        else:
+            print("LALAAAAA\n")
+        # Question 3
+        print("Q3: What does an if-else statement do?:")
+        print("A) Makes a decision - do one thing OR another")
+        print("B) SHET SHET NAKITA AKO")
+        print("C) CUTTING")
+        ans3 = input("Your answer (A/B/C): ").upper()
+        if ans3 == "A":
+            print("Correct!\n")
+            score += 1
+        else:
+            print("PUYAT KA SIGURO\n")
+        # Final Result
+        print(" ---------------------------")
+        print(f" Your total score: {score}/3")
+        percentage = (score / 3) * 100
+        print(f" That's {percentage:.0f}%")
+        if score == 3:
+            print("Excellent! You really know your stuff!")
+        elif score == 2:
+            print(" Good job! Keep it up!")
+        else:
+            print("Don't worry! Keep practicing, you'll get better!")
     else:
         print("─────────────────────────────────────────────────────────────────────")
         print("PUMILI KALANG SA DALAWA HOYYYYYYYY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
         print("─────────────────────────────────────────────────────────────────────")
 
 
-    print(" QUIZ: FUNDAMENTALS OF PROBLEM SOLVING \n")
-    score = 0
-    # Question 1
-    print("Q1: What is algorithm")
-    print("A) a solution")
-    print("B) a step-by-step procedure used to")
-    print("C) this is a game")
-    ans1 = input("Your answer (A/B/C): ").upper()
-    if ans1 == "B":
-        print("Correct!\n")
-        score += 1
-    else:
-        print("AYOS TOLLLLLL\n")
-    # Question 2
-    print("Q2: Pseudocode is?")
-    print("A) color")
-    print("B) simple english-like plan before coding")
-    print("C) place to take a rest")
-    ans2 = input("Your answer (A/B/C): ").upper()
-    if ans2 == "B":
-        print("Correct!\n")
-        score += 1
-    else:
-        print("LALAAAAA\n")
-    # Question 3
-    print("Q3: What does an if-else statement do?:")
-    print("A) Makes a decision - do one thing OR another")
-    print("B) SHET SHET NAKITA AKO")
-    print("C) CUTTING")
-    ans3 = input("Your answer (A/B/C): ").upper()
-    if ans3 == "A":
-        print("Correct!\n")
-        score += 1
-    else:
-        print("PUYAT KA SIGURO\n")
-    # Final Result
-    print(" ---------------------------")
-    print(f" Your total score: {score}/3")
-    percentage = (score / 3) * 100
-    print(f" That's {percentage:.0f}%")
-    if score == 3:
-        print("Excellent! You really know your stuff!")
-    elif score == 2:
-        print(" Good job! Keep it up!")
-    else:
-        print("Don't worry! Keep practicing, you'll get better!")
 
-    break
